@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">Your Name</a></h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blogs.html" class="nav-link active">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tech-projects.html" class="nav-link">Tech Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="for-recruiters.html" class="nav-link">For Recruiters</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title">My Blog</h1>
+                <p class="page-subtitle">Thoughts, tutorials, and insights from my development journey</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5K+</span>
+                        <span class="stat-label">Readers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Posts</button>
+                <button class="filter-btn" data-category="web-dev">Web Development</button>
+                <button class="filter-btn" data-category="design">Design</button>
+                <button class="filter-btn" data-category="backend">Backend</button>
+                <button class="filter-btn" data-category="career">Career</button>
+                <button class="filter-btn" data-category="tutorials">Tutorials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <h2 class="section-title">Featured Article</h2>
+            <article class="featured-article">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <div class="article-meta">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                January 20, 2024
+                            </span>
+                            <span class="article-read-time">
+                                <i class="fas fa-clock"></i>
+                                8 min read
+                            </span>
+                            <span class="article-category featured-category">Web Development</span>
+                        </div>
+                        <h3 class="featured-title">Building Scalable React Applications: A Complete Guide</h3>
+                        <p class="featured-excerpt">
+                            Learn how to architect React applications that can grow with your business. 
+                            This comprehensive guide covers state management, code splitting, performance 
+                            optimization, and best practices for building production-ready applications.
+                        </p>
+                        <div class="article-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Architecture</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Read Full Article</a>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image-placeholder">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- All Blog Posts -->
+    <section class="all-posts">
+        <div class="container">
+            <h2 class="section-title">All Articles</h2>
+            <div class="blog-grid">
+                <!-- Web Development Posts -->
+                <article class="blog-card" data-category="web-dev">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Jan 10, 2024</span>
+                            <span class="blog-category web-dev">Web Development</span>
+                        </div>
+                        <h3 class="blog-title">Modern JavaScript ES2024 Features You Should Know</h3>
+                        <p class="blog-excerpt">
+                            Explore the latest JavaScript features that are changing how we write code. 
+                            From new array methods to improved async handling.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">ES2024</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="design">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 28, 2023</span>
+                            <span class="blog-category design">Design</span>
+                        </div>
+                        <h3 class="blog-title">Design Systems: Creating Consistency at Scale</h3>
+                        <p class="blog-excerpt">
+                            How to build and maintain design systems that scale across teams and products. 
+                            Tools, processes, and best practices.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Design Systems</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="backend">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">10 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 15, 2023</span>
+                            <span class="blog-category backend">Backend</span>
+                        </div>
+                        <h3 class="blog-title">Microservices Architecture: When and How to Use It</h3>
+                        <p class="blog-excerpt">
+                            Understanding microservices architecture, its benefits, challenges, and 
+                            when it's the right choice for your project.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Architecture</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">12 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 02, 2023</span>
+                            <span class="blog-category tutorials">Tutorial</span>
+                        </div>
+                        <h3 class="blog-title">Building a REST API with Node.js and Express</h3>
+                        <p class="blog-excerpt">
+                            Step-by-step tutorial on creating a robust REST API with authentication, 
+                            validation, and proper error handling.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="career">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">6 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 20, 2023</span>
+                            <span class="blog-category career">Career</span>
+                        </div>
+                        <h3 class="blog-title">From Junior to Senior: My Development Journey</h3>
+                        <p class="blog-excerpt">
+                            Sharing lessons learned, mistakes made, and advice for developers 
+                            looking to advance their careers.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">Career</span>
+                            <span class="tag">Growth</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="web-dev">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="blog-overlay">
+                            <span class="read-time">8 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 05, 2023</span>
+                            <span class="blog-category web-dev">Web Development</span>
+                        </div>
+                        <h3 class="blog-title">Progressive Web Apps: The Future of Mobile Development</h3>
+                        <p class="blog-excerpt">
+                            Exploring PWAs, their benefits, and how to build app-like experiences 
+                            for the web that work offline and feel native.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">PWA</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Get notified when I publish new articles and tutorials. No spam, unsubscribe anytime.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="tech-projects.html">Projects</a>
+                    <a href="for-recruiters.html">For Recruiters</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blogs.js"></script>
+</body>
+</html>

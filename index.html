@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- ============== NAVIGATION ============== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2><a href="index.html">Your&nbsp;Name</a></h2>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <!-- Note the full file names; hash comes after the file
+             so the same link works both from other pages and from index.html -->
+        <li class="nav-item">
+          <a href="index.html#home"        class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="blogs.html"            class="nav-link">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a href="tech-projects.html"    class="nav-link">Tech Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="for-recruiters.html"   class="nav-link">For Recruiters</a>
+        </li>
+      </ul>
+
+      <div class="nav-toggle" id="mobile-menu" aria-label="Toggle menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============== HOME ============== -->
+  <section id="home" class="section home-section">
+    <div class="container">
+      <div class="hero-content">
+        <!-- … UNCHANGED HOME CONTENT … -->
+        <div class="hero-text">
+          <h1 class="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
+          <h2 class="hero-subtitle">Full Stack Developer &amp; UI/UX Designer</h2>
+          <p class="hero-description">
+            I create digital experiences that are intuitive, accessible, and delightful.
+            Passionate about clean code, modern design, and solving complex problems.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary"   type="button"
+                    onclick="scrollToSection('tech-projects')">View My Work</button>
+            <button class="btn btn-secondary" type="button"
+                    onclick="scrollToSection('for-recruiters')">Let's Collaborate</button>
+          </div>
+
+          <div class="social-links">
+            <a class="social-link" href="https://github.com/yourusername"   target="_blank" rel="noopener">
+              <i class="fab fa-github"   aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+            <a class="social-link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
